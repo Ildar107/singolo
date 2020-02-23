@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 body {
     margin:0px;
     padding: 0px;
@@ -33,12 +35,13 @@ header {
 
 .header__logo {
     font-size: 25px;
-    line-height: 6px;
+    line-height: 5px;
     font-family: "Lato";
+    font-weight: 700;
     text-align: left;
     text-transform: uppercase;
     margin-right: auto;
-    padding-left: 10px;
+    margin-bottom: 7px;
 }
 
 .header__logo span {
@@ -49,22 +52,47 @@ header {
     width: 371px;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    line-height: 6px;
+    font-size: 11px;
     text-transform: uppercase;
+    margin-top: 1px;
 }
 
 .header__menu a:hover {
     color: #f06c64;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .slider {
     height: 598px;
     background-color: #f06c64;
     box-shadow: inset 0px -6px 0px #ea676b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.slider__item {
+    margin-top: 33px;
+    margin-left: 29px;
+}
+.left-arrow img{
+    margin-bottom: 5px;
+    margin-left: 43px;
+}
+
+.right-arrow img{
+    margin-bottom: 8px;
+    margin-right: 40px;
+}
+
+.left-arrow img:hover {
+    cursor: pointer;
+}
+
+.right-arrow img:hover {
+    cursor: pointer;
+}
 .services {
     height: 500px;
     background-color: #f2f2f2;
