@@ -1,5 +1,4 @@
-@import "fonts.css";
-
+@import "/fonts.css";
 body {
     margin:0px;
     padding: 0px;
@@ -36,7 +35,7 @@ header {
 .header__logo {
     font-size: 25px;
     line-height: 5px;
-    font-family: "Lato";
+    font-family: "LatoR";
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
@@ -172,4 +171,151 @@ header {
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+}
+
+.portfolio {
+    padding: 5px 40px;
+    background-color: #2d303a;
+    height: 860px;
+    box-shadow: inset 0px -6px 0px 0px #323746;
+}
+
+.portfolio__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 66px;
+    margin-bottom: 26px;
+}
+
+.portfolio__description {
+    width: 940px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+.portfolio__filter button {
+    background-color: transparent;
+    border: 1px solid #767e9e;
+    border-radius: 5px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-right: 7px;
+    padding: 0px 7px;
+}
+
+.portfolio__filter button:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.portfolio__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height:602px;
+    margin: 19px 0px;
+}
+
+.gallery__item {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+}
+
+.about {
+    height: 722px;
+    color: #666d89;
+    padding: 5px 40px;
+    background-color: #f2f2f2;
+    box-shadow: inset 0px -6px 0px 0px #ffffff;
+}
+
+.about__title {
+    margin-top: 63px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    height:45px;
+}
+
+.about__description {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 49px;
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    height: 455px;
+}
+
+.card__img {
+    width: 300px;
+    height: 300px;
+}
+
+.card__title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin: 12px 0px 10px;
+}
+
+.card__body {
+    width: 300px;
+    height: 67px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.card__links {
+    display: flex;
+}
+
+.link__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 28px;
+    border-radius: 28px;
+    border: 1px solid #666d89;
+    margin-right: 7px;
 }
