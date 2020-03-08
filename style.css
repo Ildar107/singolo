@@ -488,6 +488,28 @@ header {
     display: inline-block;
 }
 
+.email__description a {
+    text-decoration: none;
+    color: #f0d8d9;
+    cursor: pointer;
+}
+
+.email__description a:hover {
+    color: #f0d8d9;
+    text-decoration: none;
+}
+
+.phone__description a {
+    text-decoration: none;
+    color: #f0d8d9;
+    cursor: pointer;
+}
+
+.phone__description a:hover {
+    color: #f0d8d9;
+    text-decoration: none;
+}
+
 footer {
     height:76px;
     background-color: #2d303a;
