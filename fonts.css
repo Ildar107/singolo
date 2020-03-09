@@ -16,12 +16,12 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;
-    src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+    src: url("./assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
   }
   
   @font-face {
     font-family: "Lato";
     font-style: normal;
     font-weight: 900;
-    src: url("/assets/fonts/Lato/Lato-Black.ttf") format("truetype");
+    src: url("./assets/fonts/Lato/Lato-Black.ttf") format("truetype");
   }

@@ -134,7 +134,7 @@ header {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     letter-spacing: -0.04px;
 }
 
@@ -185,7 +185,7 @@ header {
     line-height: 22px;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     padding-top: 10px;
 }
 
@@ -289,7 +289,7 @@ header {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 49px;
     letter-spacing: -0.045px;
 }
@@ -331,7 +331,7 @@ header {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     letter-spacing: -0.15px;
 }
 
@@ -377,7 +377,7 @@ header {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     letter-spacing: -0.049px;
 }
 
@@ -465,7 +465,7 @@ header {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
 }
 
 .info__img-container {
