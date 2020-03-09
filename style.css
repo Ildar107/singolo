@@ -136,6 +136,7 @@ header {
     font-weight: 300;
     text-align: justify;
     letter-spacing: -0.04px;
+    overflow: hidden;
 }
 
 .services__details {
@@ -428,6 +429,7 @@ header {
     background-color: #d6564f;
     border:0px;
     color: #f0d8d9;
+    margin-bottom: 16px;
 }
 
 .input__description::placeholder {
@@ -441,6 +443,19 @@ header {
 
 .input__description:focus {
     outline: 0px;
+}
+
+.submit-form {
+    margin-left: 548px;
+    background-color: #d6564f;
+    border:0px;
+    color: #f0d8d9;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.submit-form:hover {
+    outline: 2px solid #92433f;
 }
 
 .info__container {
