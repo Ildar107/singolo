@@ -8,31 +8,56 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header class="header_normal">
             <h1>singolo</h1>
             <div class="header__logo">singolo<span>*</span></div>
             <nav class="header__menu">
-                <a>home</a>
+                <a href="#home">home</a>
                 <div class="menu__separater"></div>
-                <a>services</a>
+                <a href="#services">services</a>
                 <div class="menu__separater"></div>
-                <a>portfolio</a>
+                <a href="#portfolio">portfolio</a>
                 <div class="menu__separater"></div>
-                <a>about</a>
+                <a href="#about">about</a>
                 <div class="menu__separater"></div>
-                <a>contact</a>
+                <a href="#contact">contact</a>
             </nav>
         </header>
         <section class="slider">
-            <div class="left-arrow">
-                <img src="./assets/images/arrow-left.png" alt="">
+            <a name="home"></a>
+            <div class="slider__content">
+                 <div class="slider__item slider__item_active">
+                    <div class="item__phone">
+                        <img src="./assets/images/Phone_png.svg" class="phone">
+                        <img src="./assets/images/display.png" class="screen">
+                        <img src="./assets/images/shadow.png" class="shadow">
+                    </div>
+                    <div class="item__phone item__phone_horisontal">
+                        <img src="./assets/images/Phone_png.svg" class="phone phone_horisontal">
+                        <img src="./assets/images/hor-display.png" class="screen screen_horisontal">
+                        <img src="./assets/images/shadow.png" class="shadow shadow_horisontal">
+                    </div>
+                </div>
+                <div class="slider__item slider__item_vertical">
+                    <div class="item__phone">
+                        <img src="./assets/images/Phone_png.svg" class="phone">
+                        <img src="./assets/images/green-display.png" class="screen">
+                        <img src="./assets/images/shadow.png" class="shadow">
+                        <img src="./assets/images/Slider.png" class="phone__background">
+                    </div>
+                </div>
             </div>
-            <img src="./assets/images/iphons.png" class="slider__item">
-            <div class="right-arrow">
-                <img src="./assets/images/arrow-right.png" alt="">
+            <div class="slider__control">
+                <div class="left">
+                    <img src="./assets/images/arrow-left.svg" alt="">
+                </div>
+                <div class="right">
+                    <img src="./assets/images/arrow-right.svg" alt="">
+                </div>
             </div>
         </section>
         <section class="services">
+            <a name="services"></a>
             <div class="services__title">Our Services</div>
             <div class="services__description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
@@ -120,6 +145,7 @@
             </div>
         </section>
         <section class="portfolio">
+            <a name="portfolio"></a>
             <div class="portfolio__title">Portfolio</div>
             <div class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <div class="portfolio__filter">
@@ -168,6 +194,7 @@
             </div>
         </section>
         <section class="about">
+            <a name="about"></a>
             <div class="about__title">About Us</div>
             <div class="about__description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -233,19 +260,22 @@
                 </div>
             </div>
         </section>
-        <section class="quote">
-            <div class="quote__title">Get a Quote</div>
-            <div class="quote__description">
+        <section class="contact">
+            <a name="contact"></a>
+            <div class="contact__title">Get a contact</div>
+            <div class="contact__description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </div>
-            <div class="quote__control">
-                <form class="input-form__container">
-                    <input type="text" class="input-name" placeholder="Name (Required)" required />
-                    <input type="text" class="input-email" placeholder="Email (Required)" required />
-                    <input type="text" class="input-subject" placeholder="Subject"/>
-                    <textarea class="input__description" placeholder="Describe your project in detail..."></textarea>
-                    <input type="submit" value="Submit" class="submit-form">
+            <div class="contact__control">
+                <form class="form__container">
+                    <input type="text" class="name" placeholder="Name (Required)" required />
+                    <span class="name__invalid-message">Please enter your name...</span>
+                    <input type="email" class="email" placeholder="Email (Required)" required />
+                    <span class="email__invalid-message">Please enter your correct email...</span>
+                    <input type="text" class="subject" placeholder="Subject"/>
+                    <textarea class="form__description" maxlength="50" placeholder="Describe your project in detail..."></textarea>
+                    <input type="button" value="SEND" class="form__button">
                 </form>
                 <div class="info__container">
                     <div class="info__title">Contact information</div>
@@ -275,7 +305,6 @@
             </input>
         </section>
         <footer>
-            <div class="footer__description">© Copyright 2013</div>
             <div class="footer__links">
                 <a href="#" class="link__container">
                     <img src="./assets/images/facebook.png"/>
@@ -292,5 +321,14 @@
             </div>
         </footer>
     </div>
+    <div class="window__modal">
+        <div class="modal__container">
+            <h3>The letter was sent </h3>
+            <p id="model-subject">Without subject </p>
+            <p id="model-description">Without description</p>
+            <button type="button">Ok</button>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
