@@ -1,4 +1,9 @@
 @import "fonts.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin:0px;
     padding: 0px;
@@ -20,27 +25,16 @@ h1 {
 }
 
 header {
-    display: flex;      
     height: 95px;
-    align-items: center;
-    padding: 0px 40px;
-    background-color: #2d303a;
-    transition: all 0.6s ease-in;
-}
-
-.header_normal {
-    background-color: #2d303a;
-    box-shadow: inset 0px -6px 0px 0px #323746;
-
-}
-
-.header_fixed {
-    position: fixed;
-    z-index: 90;
-    box-sizing: border-box;
     width: 1020px;
-    background-color: #2d303ac2;
-    box-shadow: inset 0px -6px 0px 0px #3237464f;
+    display: flex; 
+    align-items: center;
+    position: fixed;     
+    padding: 0px 40px;
+    background-color: #2d303a; 
+    box-sizing: border-box;
+    box-shadow: inset 0px -6px 0px 0px #323746;
+    z-index: 90;
 }
 
 
@@ -105,6 +99,7 @@ header {
 }
 
 .slider {
+    padding-top: 95px;
     height: 600px;
     position: relative;
 }
@@ -315,6 +310,7 @@ animation-direction: reverse;
 }
 
 .services {
+    scroll-margin-top: 95px;
     background-color: #f2f2f2;
     padding: 0px 40px;
     box-shadow: inset 0px -6px 0px #ffffff;
@@ -400,6 +396,7 @@ animation-direction: reverse;
 }
 
 .portfolio {
+    scroll-margin-top: 95px;
     padding: 5px 40px;
     background-color: #2d303a;
     box-shadow: inset 0px -6px 0px 0px #323746;
@@ -460,7 +457,10 @@ animation-direction: reverse;
     color: #f2f2f2;
 }
 
-
+.portfolio__filter button:active {
+    transform: scale(0.9);
+    filter: invert(50%);
+}
 
 .portfolio__gallery {
     display: flex;
@@ -479,7 +479,6 @@ animation-direction: reverse;
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
-    transition: all 2s ease-in;
 }
 
 .gallery__item_active {
@@ -487,6 +486,7 @@ animation-direction: reverse;
 }
 
 .about {
+    scroll-margin-top: 95px;
     color: #666d89;
     padding: 5px 40px;
     background-color: #f2f2f2;
@@ -569,6 +569,15 @@ animation-direction: reverse;
     border: 1px solid #666d89;
     margin-right: 7px;
     cursor: pointer;
+}
+
+.link__container:hover {
+    background-color: #666d89;
+    border: 1px solid rgb(235, 233, 233);
+}
+
+.link__container:hover img {
+   filter: brightness(5);
 }
 
 .contact {
