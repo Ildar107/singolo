@@ -10,7 +10,7 @@ export default function portfolioInit() {
     
     portfolio.addEventListener('click', (e) => {
         if(e.target.tagName === 'IMG') {
-            changeActive('gallery__item_active', e.target.parentElement);
+            changeActive('img_active', e.target);
         }
     })
 
