@@ -889,6 +889,7 @@ footer {
 }
 
 .modal__container{
+    width: 40%;
     padding: 20px 60px 40px;
     margin-bottom: 86px;
     background-color: #eae7e7;
