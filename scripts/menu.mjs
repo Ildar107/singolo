@@ -3,8 +3,6 @@ export default function menuInit() {
     setActiveLink();
 
     links.forEach(x => x.addEventListener('click', function(e) {
-        document.querySelectorAll('.header__menu a').forEach(y => y.classList.remove('link_active'));
-        e.target.classList.add('link_active');
         document.querySelector(`${e.target.hash}`).scrollIntoView({
             block: "start",
             inline: "start",
