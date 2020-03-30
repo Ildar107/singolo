@@ -955,16 +955,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .services__details {
-        grid-template: 
-            "a"
-            "a"
-            "a"
-            "a"
-            "a"
-            "a";
-    }
-
     .gallery__item {
         flex: 1 0 30%;
     }
@@ -984,6 +974,16 @@ footer {
 
 @media screen and (max-width: 590px) {
 
+    .services__details {
+        grid-template: 
+            "a"
+            "a"
+            "a"
+            "a"
+            "a"
+            "a";
+    }
+    
     header {
         height: 71px;
     }
