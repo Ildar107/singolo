@@ -1004,12 +1004,12 @@ footer {
     }
 
    .menu__container {
-        transform: translateX(-370px);
+        transform: translateX(-290px);
         transition: 1s ease-in-out;
         height: 100vh;
         flex-direction: column;
         justify-content: left;
-        width: 278px;
+        width: 198px;
         background-color: rgb(45,48,58);
         box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
         padding-left: 80px;
